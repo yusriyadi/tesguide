@@ -100,6 +100,7 @@
                     <th><i class="icon_cogs"></i> Action</th>
                   </tr>
                   <tr>
+
                     <td>Angeline Mcclain</td>
                     <td>2004-07-06</td>
                     <td>dale@chief.info</td>

@@ -35,29 +35,20 @@
   <link href="css/xcharts.min.css" rel=" stylesheet">
   <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- =======================================================
-    Theme Name: NiceAdmin
-    Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+
 </head>
 
 <body>
-  <!-- container section start -->
+
   <section id="container" class="">
 
 
 <?php include('header.php');?>
 <?php include('navbar.php');?>
-    <!--sidebar start-->
-    
-    <!--sidebar end-->
 
-    <!--main content start-->
     <section id="main-content">
       <section class="wrapper">
-        <!--overview start-->
+    
       
 
        <div class="row">
@@ -67,17 +58,17 @@
                 Tambah Tempat Wisata
               </header>
               <div class="panel-body">
-                <form class="form-horizontal " method="get">
+                <form class="form-horizontal " method="post" action="add_wisata.php">
                   <div class="form-group">
                     <label class="col-sm-2 control-label">Nama Tempat Wisata</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
+                      <input type="text" class="form-control" required="" name="Nama">
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 control-label">Kota Tempat Wisata</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
+                      <input type="text" class="form-control" required="" name="Kota">
                     </div>
                   </div>
                     <button type="submit" class="btn btn-primary right ">Submit</button>
@@ -90,12 +81,6 @@
       
      
           
-
-
-     
-  <!-- container section start -->
-
-  <!-- javascripts -->
   <script src="js/jquery.js"></script>
   <script src="js/jquery-ui-1.10.4.min.js"></script>
   <script src="js/jquery-1.8.3.min.js"></script>
