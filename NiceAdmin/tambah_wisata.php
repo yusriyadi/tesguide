@@ -1,3 +1,10 @@
+<?php
+include "koneksi.php" ;
+
+$sqla = "select * from wisata";
+$query = mysqli_query($conn, $sqla);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 

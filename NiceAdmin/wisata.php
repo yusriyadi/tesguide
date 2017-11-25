@@ -68,10 +68,10 @@ $query = mysqli_query($conn, $sqla);
         <!--overview start-->
         <div class="row">
           <div class="col-lg-12">
-            <h3 class="page-header"><i class="fa fa-laptop"></i> Dashboard</h3>
+            <h3 class="page-header"><i class="icon_map"></i>Tempat Wisata</h3>
             <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-              <li><i class="fa fa-laptop"></i>Dashboard</li>
+              <li><i class="icon_map"></i>Tempat Wisata</li>
             </ol>
           </div>
         </div>
