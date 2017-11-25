@@ -73,9 +73,9 @@
           <div class="col-lg-12 col-md-12">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h2><i class="fa fa-flag-o red"></i><strong>Daftar Guide</strong></h2>
+                <h2><i class="fa fa-flag-o red"></i><strong>Daftar Tempat Wisata</strong></h2>
                  <div class="panel-actions">
-                  <a href="regis_guide.php" class="btn-setting"><i class="icon_plus_alt2"></i></a>
+                  <a href="tambah_wisata.php" class="btn-setting"><i class="icon_plus_alt2"></i></a>
                 
                 </div>
                 <div class="panel-actions">
@@ -85,6 +85,7 @@
               <div class="panel-body">
 
               <div class="col-lg-12">
+
             <section class="panel">
            
 
@@ -106,7 +107,7 @@
                     <td>176-026-5992</td>
                     <td>
                       <div class="btn-group">
-                        <a class="btn btn-primary" href="#"><i class="icon_plus_alt2"></i></a>
+                        
                         <a class="btn btn-success" href="#"><i class="icon_check_alt2"></i></a>
                         <a class="btn btn-danger" href="#"><i class="icon_close_alt2"></i></a>
                       </div>
