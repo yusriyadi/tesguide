@@ -1,9 +1,11 @@
 <?php
 include "koneksi.php" ;
-$sqla = "select * wisata where id='$_GET[id]'";
-$query = mysqli_query($conn, $sqla) ;
-$data = mysqli_fetch_array($query) ;
+
+$sqla = "select * from wisata";
+$query = mysqli_query($conn, $sqla);
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -102,20 +104,23 @@ $data = mysqli_fetch_array($query) ;
                     <th><i class="icon_calendar"></i> Date</th>
                     <th><i class="icon_mail_alt"></i> Email</th>
                     <th><i class="icon_pin_alt"></i> City</th>
-                    <th><i class="icon_mobile"></i> Mobile</th>
-                    <th><i class="icon_cogs"></i> Action</th>
+                 
                   </tr>
                   <tr>
-
-                    <td>value="<?php echo $data['nama'] ; ?>"</td>
-                    <td>value="<?php echo $data['kota'] ; ?>"</td>
-                      <div class="btn-group">
+                    <?php $i=1; while($data = mysqli_fetch_array($query)){
                         
+
+               ?>     <td><?php echo "$i"; $i=$i+1;?></td>
+                     <td><?php echo $data['nama'] ; ?></td>
+                    <td><?php echo $data['kota'] ; ?></td>
+                      <td>
+                      <div class="btn-group">
                         <a class="btn btn-success" href="#"><i class="icon_check_alt2"></i></a>
                         <a class="btn btn-danger" href="#"><i class="icon_close_alt2"></i></a>
                       </div>
                     </td>
                   </tr>
+                  <?php }?>
               </div>
                      </tbody>
               </table>
