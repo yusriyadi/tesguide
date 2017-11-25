@@ -1,3 +1,9 @@
+<?php
+include "koneksi.php" ;
+$sqla = "select * wisata where id='$_GET[id]'";
+$query = mysqli_query($conn, $sqla) ;
+$data = mysqli_fetch_array($query) ;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -101,12 +107,8 @@
                   </tr>
                   <tr>
 
-                    <td>Angeline Mcclain</td>
-                    <td>2004-07-06</td>
-                    <td>dale@chief.info</td>
-                    <td>Rosser</td>
-                    <td>176-026-5992</td>
-                    <td>
+                    <td>value="<?php echo $data['nama'] ; ?>"</td>
+                    <td>value="<?php echo $data['kota'] ; ?>"</td>
                       <div class="btn-group">
                         
                         <a class="btn btn-success" href="#"><i class="icon_check_alt2"></i></a>
