@@ -67,7 +67,7 @@
                 Registrasi Guide
               </header>
               <div class="panel-body">
-                <form class="form-horizontal " method="get">
+                <form class="form-horizontal " method="post">
                   <div class="form-group">
                     <label class="col-sm-2 control-label">Email</label>
                     <div class="col-sm-10">
