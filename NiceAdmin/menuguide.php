@@ -49,7 +49,7 @@
 
 
 <?php include('header.php');?>
-<?php include('navbar.php');?>
+<?php include('navbarguide.php');?>
     <!--sidebar start-->
     
     <!--sidebar end-->
