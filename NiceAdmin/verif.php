@@ -19,6 +19,8 @@
 			header("location:index_admin.php");
 
 		}else if($row['hak_akses']=='travel'){
+
+			
 			$_SESSION['login']=2;
 			$_SESSION['id']=$row['Id_p'];
 				header("location:keranjang.php");

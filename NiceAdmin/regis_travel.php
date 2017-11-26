@@ -67,47 +67,54 @@
                 Registrasi Travel
               </header>
               <div class="panel-body">
-                <form class="form-horizontal " method="get">
+                <form class="form-horizontal" action="registrasi_travel.php" method="post">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="name" required="">
+                    </div>
+                  </div>
+                 
                   <div class="form-group">
                     <label class="col-sm-2 control-label">Email</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
+                      <input type="text" class="form-control" name="email" required="">
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 control-label">Username</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
+                      <input type="text" name="username" class="form-control" required="">
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 control-label">Password</label>
                     <div class="col-sm-10">
-                      <input type="password" class="form-control" placeholder="" required="">
+                      <input type="password" name="password" class="form-control" placeholder="" required="">
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 control-label">Nama Lengkap</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
+                      <input type="text" class="form-control" name="namalengkap" required="">
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 control-label">Alamat</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
+                      <input type="text" class="form-control" name="alamat" required="">
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 control-label">Telepon</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
+                      <input type="text" class="form-control" name="telepon" required="">
                     </div>
                   </div>
                   <div class="form-group">
                     <label class="col-sm-2 control-label">No SIUP</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
+                      <input type="text" class="form-control" name="nosiup" required="">
                     </div>
                   </div>
                     <button type="submit" class="btn btn-primary right ">Submit</button>
