@@ -14,7 +14,7 @@
 	if(mysqli_num_rows($res)==1)
 	{
 		
-		if($user=='admin')
+		if($row['hak_akses']=='admin')
 		{	$_SESSION['login']=1;
 			header("location:index_admin.php");
 
@@ -31,7 +31,7 @@
 			$_SESSION['login']=3;
 			$_SESSION['id']=$row['Id_p'];
 
-			header("location:mhs.php");
+			header("location:menuguide.php");
 
 		}
 	}

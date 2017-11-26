@@ -60,7 +60,10 @@
                 <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
             </label>
         <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
-        <a href="regis_guide.php"> Signup</a>
+        <h3 class="page-header"><i class="fa fa-laptop"></i><a href="regis_guide.php"> saya seorang tour guide </h3>
+            <h3 class="page-header"><i class="fa fa-laptop"></i><a href="regis_travel.php"> saya adalah pihak travel </h3>
+            
+        <!-- <a href="regis_guide.php"> Signup</a> -->
       </div>
     </form>
     <div class="text-right">

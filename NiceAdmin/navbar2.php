@@ -5,18 +5,12 @@
 
 
         <li class="active">
-            <a class="" href="login.php">
+            <a class="" href="login.html">
                           <i class="icon_house_alt"></i>
                           <span>Login</span>
                       </a>
           </li>   
 
-          <li class="active">
-            <a class="" href="dashboard.php">
-                          <i class="icon_house_alt"></i>
-                          <span>Dashboard</span>
-                      </a>
-          </li>     
           <li class="active">
             <a class="" href="travel.php">
                           <i class="icon_house_alt"></i>

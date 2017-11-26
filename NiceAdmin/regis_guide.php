@@ -54,7 +54,7 @@ include('koneksi.php');
 
 
 <?php include('header.php');?>
-<?php include('navbar.php');?>
+<?php include('navbarbelum.php');?>
     <!--sidebar start-->
     
     <!--sidebar end-->

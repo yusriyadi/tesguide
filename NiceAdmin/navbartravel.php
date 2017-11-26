@@ -4,16 +4,15 @@
         <ul class="sidebar-menu">
 
 
-           <li>
-            <a class="" href="logout.php">
-                          <i class="icon_lock"></i>
-                          <span>Logout</span>
+        <li class="active">
+            <a class="" href="login.php">
+                          <i class="icon_house_alt"></i>
+                          <span>Login</span>
                       </a>
-          </li>       
-
-          <li class="active">
+          </li>   
+<li class="active">
             <a class="" href="travel.php">
-                          <i class="icon_compass"></i>
+                          <i class="icon_house_alt"></i>
                           <span>Traveler</span>
                       </a>
           </li>  
@@ -21,17 +20,16 @@
             <a class="" href="guide.php">
                           <i class="icon_house_alt"></i>
                           <span>Freelancer</span>
-                          <i class="icon_briefcase_alt"></i>
-                          <span>Guide</span>
-                      </a>
-          </li>    
-          <li>
-            <a class="" href="wisata.php">
-                          <i class="icon_map"></i>
-                          <span>Tempat Wisata</span>
                       </a>
           </li>    
 
+        </li>  
+          <li class="active">
+            <a class="" href="keranjang.php">
+                          <i class="icon_house_alt"></i>
+                          <span>keranjang</span>
+                      </a>
+          </li>    
 
             </ul>
           </li>

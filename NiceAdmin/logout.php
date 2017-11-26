@@ -4,5 +4,5 @@ unset($_SESSION['login']);
 unset($_SESSION['username']);
 unset($_SESSION['level']); 
 
-header ('location:login.php') ;
+header ('location:login.html') ;
  ?>

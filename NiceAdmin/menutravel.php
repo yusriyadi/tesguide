@@ -9,7 +9,7 @@
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
   <link rel="shortcut icon" href="img/favicon.png">
 
-  <title>Creative - Bootstrap Admin Template</title>
+  <title>Creative - Bootstrap travel Template</title>
 
   <!-- Bootstrap CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +49,7 @@
 
 
 <?php include('header.php');?>
-<?php include('navbarbelum.php');?>
+<?php include('navbartravel.php');?>
     <!--sidebar start-->
     
     <!--sidebar end-->
@@ -58,72 +58,16 @@
     <section id="main-content">
       <section class="wrapper">
         <!--overview start-->
-      
-
-       <div class="row">
+        <div class="row">
           <div class="col-lg-12">
-            <section class="panel">
-              <header class="panel-heading">
-                Registrasi Travel
-              </header>
-              <div class="panel-body">
-                <form class="form-horizontal" action="registrasi_travel.php" method="post">
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label">name</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" name="name" required="">
-                    </div>
-                  </div>
-                 
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label">Email</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" name="email" required="">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label">Username</label>
-                    <div class="col-sm-10">
-                      <input type="text" name="username" class="form-control" required="">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label">Password</label>
-                    <div class="col-sm-10">
-                      <input type="password" name="password" class="form-control" placeholder="" required="">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label">Nama Lengkap</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" name="namalengkap" required="">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label">Alamat</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" name="alamat" required="">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label">Telepon</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" name="telepon" required="">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label">No SIUP</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" name="nosiup" required="">
-                    </div>
-                  </div>
-                    <button type="submit" class="btn btn-primary right ">Submit</button>
-                  </div>
-                
-                </form>
-              </div>
-            </section>
+            <h3 class="page-header"><i class="fa fa-laptop"></i><a href="dashboard.php"> Dashboard</h3>
+            <ol class="breadcrumb">
+              <li><i class="fa fa-home"></i><a href="index.php">Home</a></li>
+            </ol>
+          </div>
+        </div>
 
+       
       
      
           
