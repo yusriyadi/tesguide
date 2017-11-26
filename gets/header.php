@@ -4,7 +4,7 @@
       </div>
 
       <!--logo start-->
-      <a href="index.html" class="logo">Nice <span class="lite">Admin</span></a>
+      <a href="index.html" class="logo"> <img src="img/icons/Gambar1.png" height="45px"></a> 
       <!--logo end-->
 
       </div>

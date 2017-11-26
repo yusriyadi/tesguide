@@ -1,11 +1,3 @@
-<?php
-include "koneksi.php" ;
-
-$sqla = "select * from wisata";
-$query = mysqli_query($conn, $sqla);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,10 +60,10 @@ $query = mysqli_query($conn, $sqla);
         <!--overview start-->
         <div class="row">
           <div class="col-lg-12">
-            <h3 class="page-header"><i class="icon_map"></i>Tempat Wisata</h3>
+            <h3 class="page-header"><i class="icon_briefcase_alt"></i>Guide</h3>
             <ol class="breadcrumb">
               <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-              <li><i class="icon_map"></i>Tempat Wisata</li>
+              <li><i class="icon_briefcase_alt"></i>Guide</li>
             </ol>
           </div>
         </div>
@@ -81,9 +73,9 @@ $query = mysqli_query($conn, $sqla);
           <div class="col-lg-12 col-md-12">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h2><i class="fa fa-flag-o red"></i><strong>Daftar Tempat Wisata</strong></h2>
+                <h2><i class="fa fa-flag-o red"></i><strong>Freelancer</strong></h2>
                  <div class="panel-actions">
-                  <a href="tambah_wisata.php" class="btn-setting"><i class="icon_plus_alt2"></i></a>
+                  <a href="" class="btn-setting"><i class="icon_plus_alt2"></i></a>
                 
                 </div>
                 <div class="panel-actions">
@@ -93,34 +85,33 @@ $query = mysqli_query($conn, $sqla);
               <div class="panel-body">
 
               <div class="col-lg-12">
-
             <section class="panel">
            
 
               <table class="table table-striped table-advance table-hover">
                 <tbody>
                   <tr>
-                    <th><i class="icon_profile"></i> Full Name</th>
-                    <th><i class="icon_calendar"></i> Date</th>
+                    <th><i class="icon_profile"></i> Nama lengkap</th>
+                    <th><i class="icon_calendar"></i> tanggal lahir </th>
                     <th><i class="icon_mail_alt"></i> Email</th>
-                    <th><i class="icon_pin_alt"></i> City</th>
-                 
+                    <th><i class="icon_pin_alt"></i> kota</th>
+                    <th><i class="icon_mobile"></i> No HP</th>
+                    <th><i class="icon_cogs"></i> Action</th>
                   </tr>
                   <tr>
-                    <?php $i=1; while($data = mysqli_fetch_array($query)){
-                        
-
-               ?>     <td><?php echo "$i"; $i=$i+1;?></td>
-                     <td><?php echo $data['nama'] ; ?></td>
-                    <td><?php echo $data['kota'] ; ?></td>
-                      <td>
+                    <td>Angeline Mcclain</td>
+                    <td>2004-07-06</td>
+                    <td>dale@chief.info</td>
+                    <td>Rosser</td>
+                    <td>176-026-5992</td>
+                    <td>
                       <div class="btn-group">
+                        <a class="btn btn-primary" href="#"><i class="icon_plus_alt2"></i></a>
                         <a class="btn btn-success" href="#"><i class="icon_check_alt2"></i></a>
                         <a class="btn btn-danger" href="#"><i class="icon_close_alt2"></i></a>
                       </div>
                     </td>
                   </tr>
-                  <?php }?>
               </div>
                      </tbody>
               </table>
