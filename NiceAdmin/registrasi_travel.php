@@ -12,9 +12,12 @@ $nosiup = $_POST['nosiup'];
 
 
   // Proses simpan ke Database
-  $query = "INSERT INTO detail_travel ('nama','alamat','telepon','email','no_siup') VALUES('$name', '$alamat', '$telepon', '$email', '$nosiup');";
-  $query .= "INSERT INTO pengguna ('username', 'password','hak_akses') VALUES('$username', '$password', 'travel')";
- mysqli_multi_query($conn, $query);
+  $query = "INSERT INTO detail_travel (nama,alamat,telepon,email,no_siup) VALUES('$name', '$alamat', '$telepon', '$email', '$nosiup');";
+  $query.= "INSERT INTO pengguna (username,password,hak_akses) VALUES('$username', '$password', 'travel')";
+ 		mysqli_multi_query($conn, $query);
+
+ 		
+ 		header("location:index.php");
   
 
 ?>
