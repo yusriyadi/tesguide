@@ -1,8 +1,12 @@
 <?php
+session_start(); 
 include "koneksi.php" ;
 
-$sqla = "SELECT * FROM basket join detail_travel ON detail_travel.id_dt = basket.id_dt join detail_guide on detail_guide.id_dg=detail_travel.id_dt where basket.id_dt=""; 
-detail_guide.JENIS;";
+
+$a=$_SESSION['id'];
+
+$sqla = "SELECT * FROM basket join detail_travel ON detail_travel.id_dt = basket.Id_dt join detail_guide on basket.Id_dg=detail_guide.id_p where basket.Id_dt='$a'"; 
+
 $query = mysqli_query($conn, $sqla);
 
 ?>
@@ -44,12 +48,7 @@ $query = mysqli_query($conn, $sqla);
   <link href="css/xcharts.min.css" rel=" stylesheet">
   <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- =======================================================
-    Theme Name: NiceAdmin
-    Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+  
 </head>
 
 <body>
@@ -82,7 +81,7 @@ $query = mysqli_query($conn, $sqla);
           <div class="col-lg-12 col-md-12">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h2><i class="fa fa-flag-o red"></i><strong>Daftar Tempat Wisata</strong></h2>
+                <h2><i class="fa fa-flag-o red"></i><strong>List Pelamar</strong></h2>
                  <div class="panel-actions">
                   <a href="tambah_wisata.php" class="btn-setting"><i class="icon_plus_alt2"></i></a>
                 
@@ -114,10 +113,10 @@ $query = mysqli_query($conn, $sqla);
                ?>     <td><?php echo "$i"; $i=$i+1;?></td>
                      <td><?php echo $data['nama'] ; ?></td>
                     <td><?php echo $data['telepon'] ; ?></td>
-                      <td>
+                    
                       <div class="btn-group">
-                        <td><a href="sms.php?id=<?=$data['telepon']?>"> klik </a></td></td>
-                        <a class="btn btn-danger" href="#"><i class="icon_close_alt2"></i></a>
+                        <td><a href="sms.php?id=<?=$data['telepon']?>"><i class="icon_check"></i>Hubungi</a></td>
+                      
                       </div>
                     </td>
                   </tr>
