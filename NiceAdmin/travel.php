@@ -73,9 +73,9 @@
           <div class="col-lg-12 col-md-12">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h2><i class="fa fa-flag-o red"></i><strong>Daftar Traveler</strong></h2>
+                <h2><i class="fa fa-flag-o red"></i><strong>Travel terdaftar</strong></h2>
                  <div class="panel-actions">
-                  <a href="regis_travel.php" class="btn-setting"><i class="icon_plus_alt2"></i></a>
+                  <a href="" class="btn-setting"><i class="icon_plus_alt2"></i></a>
                 
                 </div>
                 <div class="panel-actions">

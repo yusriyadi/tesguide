@@ -1,3 +1,8 @@
+<?php
+include('koneksi.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,7 +40,12 @@
   <link href="css/xcharts.min.css" rel=" stylesheet">
   <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+  <!-- =======================================================
+    Theme Name: NiceAdmin
+    Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
 </head>
 
 <body>
@@ -62,70 +72,64 @@
                 Registrasi Guide
               </header>
               <div class="panel-body">
-                <form class="form-horizontal " method="post">
+                <form class="form-horizontal " method="post" action="registrasi_guide.php" enctype="multipart/form-data">
                   <div class="form-group">
-                    <label class="col-sm-2 control-label">Email</label>
+                    <label class="col-sm-2 control-label">nama</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
+                      <input type="text" class="form-control" name="nama" required="">
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label">Username</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label">Password</label>
-                    <div class="col-sm-10">
-                      <input type="password" class="form-control" placeholder="" required="">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label">Nama Lengkap</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
-                    </div>
-                  </div>
-                  <div class="form-group">
+                                    <div class="form-group">
                     <label class="col-sm-2 control-label">Tanggal Lahir</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" placeholder="hh/bb/tttt" required="">
+                      <input type="text" name="ttl" class="form-control" placeholder="hh/bb/tttt" required="">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="control-label col-lg-2" for="inputSuccess">Jenis Kelamin</label>
-                    <div class="col-lg-10">
-                      <select class="form-control m-bot15" >
-                                              <option>Laki-laki</option>
-                                              <option>Perempuan</option>
-                                              </select>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="col-sm-2 control-label">Umur</label>
+                            <div class="form-group">
+                    <label class="col-sm-2 control-label">jenis kelamin</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
+                      <input type="text" name="jenis_kelamin" class="form-control" placeholder="jenis gender anda" required="">
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-sm-2 control-label">Alamat</label>
+                    <label class="col-sm-2 control-label">umur</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
+                      <input type="te" name="umur" class="form-control" placeholder="" required="">
                     </div>
                   </div>
                   <div class="form-group">
+                    <label class="col-sm-2 control-label">alamat</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" name="alamat" required="">
+                    </div>
+                  </div>
+
+
+                   <div class="form-group">
                     <label class="col-sm-2 control-label">Telepon</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
+                      <input type="text" name="telepon" class="form-control" required="">
                     </div>
+
+                   
+                   <div class="form-group">
+                    <label class="col-sm-2 control-label">email</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="email" class="form-control" required="">
+                    </div>
+                    
                   </div>
                     <div class="form-group">
                     <label class="col-sm-2 control-label">No KTP</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" required="">
+                      <input type="text" class="form-control" name="noktp" required="">
                     </div>
                   </div>
+
+                  <td>Foto KTP</td>
+    <td><input type="file" name="foto"></td>
+  </tr>
                     <button type="submit" class="btn btn-primary right ">Submit</button>
                   </div>
                 
